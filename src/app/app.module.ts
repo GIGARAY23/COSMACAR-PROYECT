@@ -25,6 +25,9 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { firebaseConfig } from '../environments/environment';
 import { SetManteniminetoComponent } from './set-mantenimineto/set-mantenimineto.component';
 
+import { VermantenimientoComponent } from './paginas/vermantenimiento/vermantenimiento.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,11 +37,13 @@ import { SetManteniminetoComponent } from './set-mantenimineto/set-mantenimineto
     EstadosComponent,
     ContactosComponent,
     ManteniminetoComponent,
+    VermantenimientoComponent,
     CalificacionComponent,
     ServiciosComponent,
     UsuarioComponent,
     FormularioComponent,
-    SetManteniminetoComponent
+    SetManteniminetoComponent,
+    
   ],
   entryComponents: [],
   imports: [

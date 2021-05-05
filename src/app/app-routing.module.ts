@@ -9,6 +9,9 @@ import { ManteniminetoComponent } from './paginas/mantenimiento/mantenimineto.co
 import { ServiciosComponent } from './paginas/servicios/servicios.component';
 import { UsuarioComponent } from './paginas/usuario/usuario.component';
 import { SetManteniminetoComponent } from './set-mantenimineto/set-mantenimineto.component';
+import { VermantenimientoComponent } from './paginas/vermantenimiento/vermantenimiento.component';
+import { ReadManteniminetoComponent } from './read-mantenimineto/read-mantenimineto.component';
+
 
 const routes: Routes = [
   {
@@ -40,6 +43,10 @@ const routes: Routes = [
     component: ManteniminetoComponent,
   },
   {
+    path: 'vermantenimiento',
+    component: VermantenimientoComponent,
+  },
+  {
     path: 'crud',
     component: CrudComponent,
   },
@@ -47,6 +54,7 @@ const routes: Routes = [
     path: 'setmantenimiento',
     component: SetManteniminetoComponent,
   },
+ 
 
   {
     path: '',

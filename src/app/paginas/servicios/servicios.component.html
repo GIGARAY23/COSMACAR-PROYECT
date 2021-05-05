@@ -1,14 +1,20 @@
+<ion-title class="encabezados">Servicios </ion-title>
 
-
-
-<p>
-  servicios works!
-  hecho establecido hace echo establecido hace demasiado tiempo que un lector se 
-  distraerá con el contenido del texto
-  demasiado tiempo
-   que un lector se 
-  distraerá con el 
-  contenido 
-  del texto de un
-</p>
-
+<ion-grid *ngFor = "let producto of mantenimiento" >
+<ion-row>
+  <ion-col col-1 col-md-6 class="tabla">
+    <h3>nombre</h3>
+    </ion-col >
+    <ion-col col-1 col-md-6 class="tabla">
+      <h3>precio</h3>
+      </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col  >
+    <h3>{{producto.nombre}}</h3>
+    </ion-col >
+    <ion-col  >
+      <h3>{{producto.precio}}</h3>
+      </ion-col>
+</ion-row>
+</ion-grid>  

@@ -1,0 +1,15 @@
+<ion-content >
+    <ion-item *ngFor = "let producto of mantenimiento">
+        <ion-label class="normal">{{producto.nombre}}</ion-label>
+        <ion-buttons slot="end">
+            <ion-button (click)="onSubmitLogin = producto">
+                <ion-icon slot="icon-only"  name="create-outline"></ion-icon>
+             </ion-button>   
+            
+         <ion-button (click)="deletemantenimiento(producto)">
+            <ion-icon slot="icon-only" color="danger" name="trash-bin-outline"></ion-icon>
+         </ion-button>   
+        </ion-buttons>
+        
+        </ion-item>
+</ion-content>
